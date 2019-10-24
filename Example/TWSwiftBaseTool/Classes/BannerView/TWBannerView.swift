@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ScrollDirection {
+enum TWScrollDirection {
     case unknown
     case up
     case down
@@ -42,11 +42,11 @@ class TWBannerView: UIView {
     
     var dragContentOffset: CGPoint?
     
-    var currentDirection: ScrollDirection?
+    var currentDirection: TWScrollDirection?
     
-    var configDirection: ScrollDirection? {
+    var configDirection: TWScrollDirection? {
         didSet {
-            if let direction = configDirection, direction == ScrollDirection.up || direction == ScrollDirection.down {
+            if let direction = configDirection, direction == TWScrollDirection.up || direction == TWScrollDirection.down {
                 self.layout.scrollDirection = UICollectionViewScrollDirection.vertical
             } else {
                 self.layout.scrollDirection = UICollectionViewScrollDirection.horizontal
@@ -225,22 +225,22 @@ extension TWBannerView : UICollectionViewDelegate, UICollectionViewDataSource, U
             let offset = scrollView.contentOffset
             if layout.scrollDirection == UICollectionViewScrollDirection.horizontal {
                 if offset.x > dragContentOffset?.x ?? 0 {
-                    currentDirection = ScrollDirection.right
+                    currentDirection = TWScrollDirection.right
                 } else {
-                    currentDirection = ScrollDirection.left
+                    currentDirection = TWScrollDirection.left
                 }
             } else {
                 if offset.y > dragContentOffset?.y ?? 0 {
-                    currentDirection = ScrollDirection.up
+                    currentDirection = TWScrollDirection.up
                 } else {
-                    currentDirection = ScrollDirection.down
+                    currentDirection = TWScrollDirection.down
                 }
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.userIsDragging = false
             }
         } else {
-            currentDirection = ScrollDirection.unknown
+            currentDirection = TWScrollDirection.unknown
         }
     }
     
