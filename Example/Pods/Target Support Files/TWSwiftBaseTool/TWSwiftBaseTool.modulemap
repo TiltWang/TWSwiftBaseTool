@@ -1,0 +1,6 @@
+framework module TWSwiftBaseTool {
+  umbrella header "TWSwiftBaseTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

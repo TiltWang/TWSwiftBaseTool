@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TWSwiftBaseTool_Example' do
+  pod 'TWSwiftBaseTool', :path => '../'
+
+  target 'TWSwiftBaseTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

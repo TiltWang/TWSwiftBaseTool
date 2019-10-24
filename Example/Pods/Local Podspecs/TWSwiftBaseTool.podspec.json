@@ -1,0 +1,22 @@
+{
+  "name": "TWSwiftBaseTool",
+  "version": "0.1.0",
+  "summary": "A short description of TWSwiftBaseTool.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wangxufeng092@163.com/TWSwiftBaseTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wangxufeng092@163.com": "wangxufeng65180@offcn.com"
+  },
+  "source": {
+    "git": "https://github.com/wangxufeng092@163.com/TWSwiftBaseTool.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TWSwiftBaseTool/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - TWSwiftBaseTool (0.1.0)
+
+DEPENDENCIES:
+  - TWSwiftBaseTool (from `../`)
+
+EXTERNAL SOURCES:
+  TWSwiftBaseTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TWSwiftBaseTool: 2aeea434b111a9706ebfa097164445ed37929f78
+
+PODFILE CHECKSUM: f210749fd0cea2634e9471b44dd09d3bc682b9b4
+
+COCOAPODS: 1.7.5
